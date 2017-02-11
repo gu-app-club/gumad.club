@@ -1,3 +1,5 @@
+> Learn git in 10ish minutes...
+
 # How to use git!
 
 This is an exercise to learn git. Git is basically Google Drive for developers and it's an essential skill for working together on a project.
