@@ -5,8 +5,9 @@ This is an exercise to learn git. Git is basically Google Drive for developers a
 This guide will assume you already have git installed. If you don't, you should follow the instructions for you operating system [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 This also assumes that you have made a github account and have been invited to the [GU-MAD organization](https://github.com/gu-app-club) on github.
-  - If you haven't made a github account yet, you can do so [here](https://github.com/).
-  - If _you have_ made a github account but haven't been added to the organization, ask one of the officers (Rudy or Evan) to add you!
+
+- If you haven't made a github account yet, you can do so [here](https://github.com/).
+- If _you have_ made a github account but haven't been added to the organization, ask one of the officers (Rudy or Evan) to add you!
 
 # The rite of passage.
 
@@ -61,7 +62,7 @@ Once you're done, go back to your command line. We're going to upload our change
 
 We do this by creating a `commit`. A commit is a complete version of your code that you're adding. For example, every time your phone updates some app, behind the scenes, someone has pushed a commit (which might be called something like `Add cool feature XYZ; Fix death-bug`).
 
-The important part: **A commit contains one or more file "changes".**.
+The important part: **A commit contains one or more file "changes".**
 
 #### Time to check our status
 
@@ -119,6 +120,7 @@ git push
 Git will ask you for your username password. **This is your github username and password**, not your computer's username and password.
 
 If all goes well, you should see something like this:
+
 ```
 Username for 'https://github.com': Flaque
 Password for 'https://Flaque@github.com':

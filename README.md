@@ -9,3 +9,6 @@ Members will need no previous knowledge of app development, only a willingness t
 We use slack to communicate. Slack is a group communication app that's used by devs everywhere.
 
 [You can join here](https://gu-app-club.slack.com/signup). Sign up with your zagmail and you will get access.
+
+# Learning git
+Git is a super important part of the way we do things. If you join the club, you should learn git! We know it can be difficult, so we've setup [a tutorial here](/github) to help you out!
