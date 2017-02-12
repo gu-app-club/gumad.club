@@ -11,4 +11,4 @@ We use slack to communicate. Slack is a group communication app that's used by d
 [You can join by filling this out.](https://goo.gl/forms/3Gz0esrKSndUMlOK2). Use your zagmail.
 
 # Learning git
-Git is a super important part of the way we do things. If you join the club, you should learn git! We know it can be difficult, so we've setup [a tutorial here](https://gu-app-club.github.io/github) to help you out!
+Git is a super important part of the way we do things. If you join the club, you should learn git! We know it can be difficult, so we've setup [a tutorial here](https://gumad.club/learn_git) to help you out!
