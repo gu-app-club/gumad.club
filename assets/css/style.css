@@ -489,6 +489,7 @@ hr {
     height: 1px;
     margin-bottom: 5px;
     border: none;
+    background: #eee;
 }
 
 table {
