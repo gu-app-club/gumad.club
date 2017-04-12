@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="gumad.club : Club Website Source Code">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="../../assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../../assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../../assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../../assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../assets/css/custom.css">
+
+
+    <title>gumad.club</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+      <header class="inner">
+          <a id="forkme_banner" href="https://github.com/gu-app-club/">View on GitHub</a>
+          <br>
+          <a href="http://gumad.club"
+          <h3 id="project_title" >GU<span class="light">MAD</span> </h3> </a>
+      </header>
+  </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+        <section id="main_content" class="inner">
+          <h1>Shake Images with Swift 3</h1>
+
+          <hr noshade>
+
+          <br>
+          <h2 id="gettingstarted">Getting Started</h2>
+
+          <br>
+          <blockquote>
+              After launching xcode and creating a new project with single view<br>
+              application, go to <strong>File</strong> -> <strong>New</strong> -> <strong>File</strong> <br>
+              This will present to you a new window with multiple file options,
+              make sure the top bar is selecting iOS, then choose Swift File and click <strong>Next</strong> <br>
+              name the file <strong>shakeableImageView</strong> then click <strong>create</strong>
+          </blockquote>
+
+          <br>
+          <h2>Writing the shakabel extension</h2>
+          <br>
+          <blockquote>
+              In Swift programing there is this idea of extensions and protocols. Extensions is
+              implementing function that can be used to a certain type of class. For example, adding
+              an extension to a class double to print as with two decimal places and a dollar sign. In this
+              this site we will be adding an extension to an image view (UIImageView) so that it has the ability
+              to be shaking whenever the user taps it.
+
+              Go to the file shakeableImageView you just created and remove everything, except the top comment, and
+              add the following
+            </blockquote>
+
+            <img src="extensionFunction.png"><img>
+
+
+            <br>
+            <h2>Linking an image from the storyboard</h2>
+            <br>
+            <blockquote>
+                Now go to the storyboad and add an image to your viewController, then
+                link the image to your <strong>ViewController.swift</strong>. Save this  <a href="https://upload.wikimedia.org/wikipedia/en/thumb/9/94/GU_Bulldogs_Logo.svg/1200px-GU_Bulldogs_Logo.svg.png">image</a>
+                and drag and drop it to your project. Add it as an image in your story board <br>
+
+                In the storyboard click press <strong>ctl</strong> and drag to your file as shown in the following picture. Name the image <strong>bulldogImg</strong>
+
+              <img src="drag.png"><img>
+              <br>
+
+            </blockquote>
+
+            <h2>Tap gesture recognizer</h2>
+            <br>
+            <blockquote>
+                Now your the image is linked your code file, but how would your code know if the image was pressed or not.
+                In swift every class that has the name <strong>view</strong> in it confirms to all view protocols, and one
+                of those protocols is <strong>isUserInteractionEnabled</strong>, which makes it user insteractive. However
+                this will not allow us to do a certain thing when the user is pressed, what we need is to know whent the
+                image was pressed and what to do when it is pressed. So another protocol that the View classes anser to is
+                <strong>addGestureRecognizer</strong><br>
+                we can use this so that whenever the user tap we call a function and shake the image. <br>
+                Hence, add the following to your ViewController in the <strong>viewDidLoad()</strong> function.
+                When you add this function it will give you an error in defineing <strong>tap</strong>
+                because we haven't implemented the <strong>imageTapped</strong> function
+                <img src="code.png"><img>
+
+              <br>
+            </blockquote>
+
+            <h2>Tap gesture handler</h2>
+            <br>
+            <blockquote>
+                Now that we added the tap gesture to the image we need to handel it.
+                and what we need to do is to shake the image everytime the user tap it
+                so first we need to declare a the <strong>imageTapped</strong> function
+                <img src="code1.png"><img>
+                <br><br>
+                Now using our protocol, since the image is <strong>UIImageView</strong> write the following
+                <img src="code2.png"><img>
+                <br><br>
+              <br>
+            </blockquote>
+
+            <h2>Result</h2>
+            <img src="shakeableBuldog.gif"><img>
+
+            <br>
+
+
+
+        </section>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+</body>
+
+</html>
